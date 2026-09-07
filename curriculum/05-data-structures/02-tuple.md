@@ -7,7 +7,6 @@ lesson: true
 isDraft: true
 ---
 # Tuple
-## Introduction {#introduction}
 Tuple is an ordered and immutable collection data structure. **Ordered** meaning it keeps the order of elements in which they are inserted, and **immutable** means that once the tuple is created it cannot change, and you cannot add or remove elements from it.
 
 ## Lesson Overview {#overview}
@@ -39,7 +38,7 @@ print(f"First element: {a[0]} - Last element: {a[-1]}")
 ```
 
 ## Useful methods
-Unlike functions, as we cannot modify tuples, we don't have a lot of methods available to us, but we will list a few.
+Unlike lists, as we cannot modify tuples, we don't have a lot of methods available to us, but we will list a few.
 * `count()` - returns the number of times a specified value appears in tuple.
     ```python interactive
     numbers = (1, 2, 3, 3, 3, 4, 5)
@@ -52,6 +51,7 @@ Unlike functions, as we cannot modify tuples, we don't have a lot of methods ava
     ```
 
 :::explore[Learn more about Python Tuples]
+Read these resources to learn more about tuples in Python:
 * [Python built-in types: tuples from RealPython](https://realpython.com/ref/builtin-types/tuple/)
 * [Tuples and Sequences from official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
 :::

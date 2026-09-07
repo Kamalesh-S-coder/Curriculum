@@ -148,16 +148,14 @@ for item in a:
 This is very useful as we often need to work with specific elements from the list.
 
 :::explore[Learn more about Python lists]
-
 Learn more about Python Lists from these resources:
-* [Google for Education - Python Lists](https://developers.google.com/edu/python/lists)
-* [Official Python Documentation on Lists](https://docs.python.org/3/library/stdtypes.html#typesseq-list)
-* [Official Python Documentation on Data Structures - more on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
-
+* Learn about `zip()` function from [zip() function - RealPython](https://realpython.com/ref/builtin-functions/zip/) and [zip() function - official Python Documentation](https://docs.python.org/3.3/library/functions.html#zip) that allows for combining of multiple lists (or other iterables as we will see later) by producing **tuples** (we cover these in the next lesson)
+* Learn about `.sort()` method from [official Python Documentation](https://docs.python.org/3/library/stdtypes.html#list.sort) which is very useful in sorting lists in-place. Sorting iterables is a very useful tehnique and there are multiple arguments and ways to sort iterables in Python. Be sure to read this [Sorting Tehniques - official Python documentation](https://docs.python.org/3/howto/sorting.html) to familiarize yourself with tehniques used.
+* Go thrue all the available methods on the lists in [More on Lists - official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists), as these will come in handy when working on your projects. You do not need to remember them all, but just read thrue them and their intended purpouse so you will know what is out there.
 :::
 
 ## Exercise
-Complete [Exercise 05 — The Cozy Bakery Inventory](#) to practice list creation, indexing, modification, and using python documentation to solve list tasks.
+Complete [[TODO] Exercise 05 — The Cozy Bakery Inventory](#) to practice list creation, indexing, modification, and using python documentation to solve list tasks.
 
 ## Assignment {#assignment}
 1. Replace `item_name`, `item_price` and `item_stock` static values with an empty list.
