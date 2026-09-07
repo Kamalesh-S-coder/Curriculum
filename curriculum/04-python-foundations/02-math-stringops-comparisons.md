@@ -215,28 +215,24 @@ print(not True) # False
 Try to solve [excercise-3](https://github.com/ThePythonLedger/python-exercises/tree/main/exercises%2Ffoundations%2F03_math_and_comparisons) for better understanding.
 
 ## Assignment
-In the last assignment we have declared our shop variables and printed the inventory. In this one you are tasked with:
-1. Open your code editor in your last project directory `simple-python-shop`
-2. Open `main.py` file we have been working on
-3. Standardize your strings:
-    * Convert `shop_name` to **uppercase** (e.g., `MERLIN SHOP`)
-    * Convert item name to **titlecase** (e.g., `Excalibur`)
-4. Calculate the checkout price:
-    * Create variable `total` by multiplying `item_price` and `item_quantity`
-5. Comparison checks:
-    * Create a boolean `is_large_order` that evaluates whether `item_quantity` is greater then or equal to `3`.
-6. Update your output to use **f-string** :
-    ```
-    Welcome to MERLIN SHOP
-    --------------------------------
-    Item: Excalibur
-    Purchased: 3 x 67.20
-    Total: $201.60
-    Large Order: True
-    --------------------------------
-    Thank you for your purchase !
-    ```
-7. Commit your changes with `git` and push to Github
+Now that you know how to get user input and branch your program using conditional logic (`if`, `elif`, `else`) the code can move away from hardcoded values and become interactive. 
+
+**Goal:** use `input()` to collect user choices, cast strings to numbers, and use conditional logic to apply discounts and stock checks.
+
+1. Open `main.py` file in our `simple-python-shop` project directory.
+2. Add a new variable `item_stock` and set it to some integer
+3. Interactive input: 
+    * Ask the user for desired `item_quantity` using `input()`. **Don't forget** to cast the string to integer !
+4. Stock & Availability Check
+    * If `item_quantity` is less or equal to `0` print an error message: `Invalid quantity ordered`
+    * If `item_quantity` is greater then `item_stock` print `Sorry, we do not have enough stock.`
+5. Dynamic discount (conditionals)
+    * Calculate the total (you should have this from the last lesson)
+    * If `total` is over `100` apply a **10%** discount (`total * 0.90`) and print: `Discount applied: 10%`
+    * Otherwise print: `No discount applied`
+6. Receipt Output
+    * Output the final receipt showing item name, quantity, applied discount state, and final amount due.
+7. Commit and push your updated code to Github.
 
 ## Deepen Your Knowledge
 1. Learn more about [Basic math in Python](https://cs.stanford.edu/people/nick/py/python-math.html#math) from article in **Stanford University**, covering all the topics in this lesson but in a different style and a bit more.
