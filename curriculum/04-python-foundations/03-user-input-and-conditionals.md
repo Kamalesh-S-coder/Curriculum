@@ -94,20 +94,15 @@ Now that you know how to get user input and branch your program using conditiona
 
 **Goal:** use `input()` to collect user choices, cast strings to numbers, and use conditional logic to apply discounts and stock checks.
 
-1. Open `main.py` file in our `simple-python-shop` project directory.
-2. Add a new variable `item_stock` and set it to some integer
-3. Interactive input: 
-    * Ask the user for desired `item_quantity` using `input()`. **Don't forget** to cast the string to integer !
-4. Stock & Availability Check
-    * If `item_quantity` is less or equal to `0` print an error message: `Invalid quantity ordered`
-    * If `item_quantity` is greater then `item_stock` print `Sorry, we do not have enough stock.`
-5. Dynamic discount (conditionals)
-    * Calculate the total (you should have this from the last lesson)
-    * If `total` is over `100` apply a **10%** discount (`total * 0.90`) and print: `Discount applied: 10%`
-    * Otherwise print: `No discount applied`
-6. Receipt Output
-    * Output the final receipt showing item name, quantity, applied discount state, and final amount due.
-7. Commit and push your updated code to Github.
+Open `main.py` in your `simple-python-shop` project.
+1. Set `item_quantity` to `0` as its initial value and remove `item_price` variable.
+2. Use a `while` loop to repeatedly prompt the user for an item price.
+    * If the price entered is less then 0, print message saying `Invalid price, must be positive`, and skipping the rest of the iteration code, asking user again to enter the price.
+    * Otherwise check if the price entered is 0 and if so, break out of the loop.
+    * Otherwise, check if `item_stock - item_quantity` is more than `1` and if not, break out of the loop, informing the user we are out of stock.
+    * Otherwise, add the price user entered to `total` and increment `item_quantity` by 1.
+3. When the loop finishes, determine if the `total` can have a discount and print out the final receipt.
+4. Make sure your program works, then commit and push your code
 
 ## Deepen Your Knowledge
 * Learn more about [Indentation in Python](https://realpython.com/ref/glossary/indentation/) from this **Real Python** article
