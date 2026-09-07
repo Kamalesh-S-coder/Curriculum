@@ -160,7 +160,26 @@ Learn more about Python Lists from these resources:
 Complete [Exercise 05 — The Cozy Bakery Inventory](#) to practice list creation, indexing, modification, and using python documentation to solve list tasks.
 
 ## Assignment {#assignment}
-**Todo**
+1. Replace `item_name`, `item_price` and `item_stock` static values with an empty list.
+2. In *infinite loop* ask the user to fill up the inventory by typing in a name, price and stock level of item.
+    * If user types **empty string**, break out of the loop and continue with program execution.
+    * User should enter all of the information on the same line. Use `.split()` method on the inputed string to catch all information needed. **Do not forget** to cast `price` to `float` and `stock` to `integer`.
+    * Append every information to their own respective list.
+3. Display the inventory by using `zip()` function and combining all three lists to display items one by one.
+4. Create variable `order` and assign it an empty list.
+5. Create another *infinite loop* and inside the loop ask the user to enter the name of the item he wants to buy.
+    * If user enters empty string, break out of the loop.
+    * If the item user entered is in the `item_name` list, find its index position and assign it to variable, otherwise inform the user that there is no such item at the moment, and **continue** with next iteration of loop
+    * When you have an index of the item user asked, ask the user to enter quantity of the items. Check if entered item quantity is not bigger then actual item stock and if it is, tell the user that we do not have that many items in stock, then **continue** with new iteration.
+    * If we have the item and have enough of stock, add the total for item (item price multiplied by quantity) to `order` list.
+    * Decrease the stock number of items by the quantity ammount and if item stock reaches 0, remove the item (and its relevant info) from the inventory lists.
+6. Calculate the total by adding all the numbers in `order` list using `sum()` function and calculate whether to give 10% discount (if `total > 100`).
+7. Print out the final receipt in the following format:
+    ```
+    Your total is: $<total>
+    ```
+8. Print the inventory after shopping.
+9. Make sure your application works correctly, commit the changes and push your code to Github.
 
 ## What's Next {#next-lesson}
 Lists are ordered and mutable, which makes them ideal for collections that grow or change over time. But what if you need an ordered collection that **cannot** be modified once created?
