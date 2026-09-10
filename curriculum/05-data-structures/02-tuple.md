@@ -56,8 +56,21 @@ Read these resources to learn more about tuples in Python:
 * [Tuples and Sequences from official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
 :::
 
+## Exercise
+Complete [[TODO] Exercise 06 — WorkingTitle](#) to practice tuples.
+
 ## Assignment {#assignment}
-**Todo**
+Using lists to separatly hold multiple related values is brittle and will break if you do not pay attention to all lists containing data. In this assigment we will deal with those issues by using tuples.
+
+1. Open our `main.py` file we have been working on
+2. Create a new empty list called `inventory`. This will hold tuples of related data `(product_name, product_price, product_stock)`.
+3. Delete previusly defined `item_name`, `item_price` and `item_stock` variables, we wont need them anymore.
+4. Just like before, in **infinite loop**, first check if the input is an *empty string* and if it is, break out of the loop, otherwise get the users input containing *name*, *price* and *stock* in a single line, then split the line using `split()` method to get a list of inputed data.
+5. Instead of appending each data to their own list, create a tuple called `item` containing `name`, `price` and `stock` in that particular order and append that to our `inventory` list we declared earlier. Print out each `inventory` element using `for` loop.
+6. On to customer ordering items now. Keep `order` list and instead of storing only totals for each item, we will now store `item_name`, `item_quantity` and `line_total` in **tuple** called `line_item` and append that to our `order` list so our shop can better keep track of the orders. **Keep in mind** - tuples are *immutable* which means that you will have to reduce `stock` of the item by replacing entire tuple with new `stock` value.
+7. Same as before, calculate the `total` for all the items bought, apply a 10% discount if the `total` is over 100.
+8. In the end, print out the inventory, to make sure that the items are actually removed once bought.
+9. Make sure your program runs, then commit the changes and push to Github
 
 ## What's Next {#next-lesson}
-**Todo**
+Now that you have seen data structures that can contain duplicates, it's time to meet **set** - a unique data structure that does not allows for duplicates.
