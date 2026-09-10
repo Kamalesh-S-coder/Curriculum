@@ -78,8 +78,16 @@ Learn more about sets in these materials:
 * [Python data structures: set from official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#sets)
 :::
 
+## Exercise
+Complete [[TODO] Exercise 07 — WorkingTitle](#) to practice sets.
+
 ## Assignment {#assignment}
-**Todo**
+In this assigment our task is simple one. We need to track distinct *unsold* items so we can better prepare for the next day in our little shop.
+
+1. Open `main.py` file we have been working on.
+2. Define a set for all **sold items** (`item[0]` of element in `order` list) and define a set of **all inventory items** (`item[0]` of element in `inventory` list) - you can use set coprehension to do this in one line or use a for loop to iterate over each item in the lists.
+3. Create a variable `unsold_items` and set its value to be `sold_items` substracted from `all_inventory_items`
+4. Print out items that did not have a sale today.
 
 ## What's Next {#next-lesson}
-**Todo**
+Now that we covered index based data structures, it's time to meet **dictionary** which is unique in its *key-value* approach and is probably most used data structure (besides *lists*).
