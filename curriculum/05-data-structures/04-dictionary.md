@@ -124,12 +124,23 @@ for key, value in mydict.items():
     print(key, value)
 ```
 
-
+## Exercise
+Complete [[TODO] Exercise 08 — WorkingTitle](#) to practice dictionaries.
 
 ## Assignment {#assignment}
+In this assignment, we will completely eliminate list index tracking by refactoring our inventory into a dictionary, mapping each product name directly to its price and stock.
 
+1. Open `main.py` in our project directory.
+2. Replace `inventory` list with an empty dictionary `{}`.
+3. When reading users input, assign the item directly to dictionary `inventory`.
+    ```python
+    inventory[name] = {"price": price, "stock": stock}
+    ```
+4. In customer order, look up if item is in the inventory directly with `if item_name in inventory`, verify stock availability with `inventory[item_name]["stock"]` and update stock count in place with `inventory[item_name]["stock"] -= 1` and if stock reaches `0` then delete the item from the inventory using `del inventory[item_name]`.
+5. Keep `order` as a list of tuples, and update the `unsold_items` variable to check between keys of the dictionary and tuple elements - use `inventory.keys()` to get a *tuple-like* object of dictionary keys that you can use in this case to substract `order` elements from keys of dictionary.
+6. Test your application, make sure it works, commit and push to Github.
 
 ## Deepen Your Knowlege {#learn-more}
 
-
 ## What's Next {#next-lesson}
+We are now done with basic data structures in Python, next we move on to something even more fun and useful; **functions**. 
