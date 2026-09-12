@@ -1,12 +1,12 @@
 ---
 id: math-strops-and-comparisons
-title: Math, String Operations and Comparisons
-sidebar_label: Math, String Operations and Comparisons
+title: Arithmetic Operations & Operators, Operations On Strings and Comparisons
+sidebar_label: Arithmetic Operations & Operators, Operations On Strings and Comparisons
 sidebar_position: 2
 lesson: true
 ---
 
-# Math, String Operations and Comparisons
+# Arithmetic Operations & Operators, Operations On Strings and Comparisons
 In the last lesson we have learned how to output data to our screen, how to declare a variable and what different core data types exists in Python. In this lesson we will learn how math works in Python.
 
 ## Lesson Overview

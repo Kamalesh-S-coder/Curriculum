@@ -1,6 +1,12 @@
 # Current curriculum plan
 This may be subject to change.
 
+## Legend
+`[ ]` - no work has been done
+`[-]` - somebody is working on this but it has not yet been completed. There should be a related PR.
+`[x]` - lesson completed
+
+## Roadmap
 1. Introduction
     * [x] How course works?
     * [ ] Motivation and Mindset
