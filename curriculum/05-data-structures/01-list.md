@@ -155,7 +155,7 @@ Learn more about Python Lists from these resources:
 :::
 
 ## Exercise
-Complete [[TODO] Exercise 05 — The Cozy Bakery Inventory](#) to practice list creation, indexing, modification, and using python documentation to solve list tasks.
+Complete [[TODO] Exercise 05 — WorkingTitle](#) to practice list creation, indexing, modification, and using python documentation to solve list tasks.
 
 ## Assignment {#assignment}
 1. Open `main.py` file in our `simple-python-shop` directory
