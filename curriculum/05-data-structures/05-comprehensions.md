@@ -47,7 +47,7 @@ print(squared)
 Result is completly the same, but our code is simpler and more concise. In this simple example we may not see the benefit, but let's add a check there, to only collect **even** numbers.
 
 If we use **for-loop** we may do something like this.
-```python
+```python interactive
 nmb_list = [1, 2, 3, 4, 5, 6, 7, 8]
 squared_even = []
 for nmb in nmb_list:
