@@ -143,4 +143,4 @@ In this assignment, we will completely eliminate list index tracking by refactor
 ## Deepen Your Knowlege {#learn-more}
 
 ## What's Next {#next-lesson}
-We are now done with basic data structures in Python, next we move on to something even more fun and useful; **functions**. 
+We are now done with basic data structures in Python, next we move on to something even more fun and useful, kind of a super power in Python: **coprehensions**

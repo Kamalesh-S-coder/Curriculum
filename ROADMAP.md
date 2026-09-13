@@ -28,25 +28,22 @@ This may be subject to change.
     * [x] User Input and Conditionals
     * [x] Loops
 5. Data Structures
-    * [x] Lists
-    * [x] Tuples
-    * [x] Sets
-    * [x] Dictionaries
-6. Comprehensions
-    * [ ] List Coprehension
-    * [ ] Set Coprehension
-    * [ ] Dict Coprehension
-7. Code Organization
+    * [x] Lists (WIP)
+    * [x] Tuples (WIP)
+    * [x] Sets (WIP)
+    * [x] Dictionaries (WIP)
+    * [x] Coprehensions (`list`, `dict` `set`) (WIP)
+6. Code Organization
     * [ ] Functions
     * [ ] Scope and Namespaces (LEGB rule)
     * [ ] Understanding Errors and Error Handling
     * [ ] File Handling
     * [ ] Modules
-8. Capstone Project 1
+7. Capstone Project 1
     * [ ] Problem Solving
     * [ ] Problem Solving - Fizz-Buzz Example 
     * [ ] Capstone Project
-9. Built-in and Modules
+8. Built-in and Modules
     * [ ] `math` module
     * [ ] `json` module
     * [ ] `random` module
@@ -54,20 +51,20 @@ This may be subject to change.
     * [ ] `pathlib` / `os` module
     * [ ] `csv` module
     * [ ] `sys` module
-10. Third-party Modules
+9. Third-party Modules
     * [ ] Virtual Environments
     * [ ] Using `pip` and `requirements.txt`
     * [ ] Creating python package -  `pyproject.toml` file
-11. Capstone Project 2
+10. Capstone Project 2
     * [ ] Clean Code Priciples
     * [ ] Capstone Project
-12. Object Oriented Programming - Part 1
+11. Object Oriented Programming - Part 1
     * [ ] Introduction to classes and instances
     * [ ] Methods (instance, class, static)
     * [ ] Dunder Methods (`__str__`, `__repr__`, etc...)
-13. Capstone Project 3
+12. Capstone Project 3
     * [ ] Capstone Project
-14. Object Oriented Programming - Part 2
+13. Object Oriented Programming - Part 2
     * [ ] Four Pillars of Object-Oriented Programming (Encapsulation, Abstraction, Inheritance, Polymorphism)
-15. Capstone Project 4
+14. Capstone Project 4
     * [ ] Capstone Project
