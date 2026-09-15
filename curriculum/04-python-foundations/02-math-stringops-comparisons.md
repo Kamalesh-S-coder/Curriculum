@@ -20,46 +20,44 @@ Number data types, `int` and `float` are very useful when we must do some math.
 
 ### Addition
 Adding two numbers together can be done with `+` operator.
-```python interactive
+```python interactive debug
 a = 5
 b = 2
-
-print(a + b)
+c = a + b
+print(c)
 ```
 
 ### Subtraction
 Subtraction of two numbers is done with `-` operator.
-```python interactive
+```python interactive debug
 a = 5
 b = 2
-
-print(a - b)
+c = a - b
+print(c)
 ```
 
 ### Multiplication
 Multiplication of two numbers is done with `*` operator.
-```python interactive
+```python interactive debug
 a = 5
 b = 2
-
-print(a * b)
+c = a * b
+print(c)
 ```
 
 ### Division
 Division of two numbers is done with `/` operator.
-```python interactive
+```python interactive debug
 a = 5
 b = 2
-
-print(a / b)
+c = a / b
+print(c)
 ```
 
 :::info
-
 Division **always** returns `float`
 
 You must be careful when dividing two numbers as the second number must not be equal to 0. If the *divisor* (second number) is 0, Python will raise **ZeroDivisionError**.
-
 :::
 
 ### Floor Division
@@ -69,8 +67,8 @@ Sometimes we may need to only get *whole number* from division and we dont care 
 ```python interactive
 a = 5
 b = 2
-
-print(a // b)
+c = a // b
+print(c)
 ```
 
 ### Modulo Operator
@@ -80,8 +78,8 @@ Sometimes we may need to know remainder of *division* but we do not care about t
 ```python interactive
 a = 10
 b = 3
-
-print(a % b)
+c = a % b
+print(c)
 ```
 > Result of this operation is 1 because 3 goes into 10 three times and whats left is 1.
 
@@ -92,19 +90,19 @@ Raises the left value to the power of the right value.
 ```python interactive
 a = 10
 b = 2
-
-print(a ** b)
+c = a ** b
+print(c)
 ``` 
 
 ## Performing Operations on Strings
 We can perform various operations on strings in Python. For example, we can:
 
 ### Add Strings Together
-```python interactive
+```python interactive debug
 a = "Hello"
 b = " World"
-
-print(a + b)
+c = a + b
+print(c)
 ```
 
 ### Multiply Strings
@@ -121,10 +119,8 @@ print(a[1]) # Second letter at index 1
 print(a[-1]) # Last letter at index -1
 ```
 
-:::info[In programming we count from 0]
-
+:::info[In Python counting starts from 0]
 Python always starts counting at 0. This is called an **index**.
-
 :::
 
 ### Convert Case
@@ -178,12 +174,12 @@ All of these return a `boolean` value. `True` or `False`
 a = 5
 b = 3
 
-print(a == b) # False
-print(a != b) # True
-print(a > b) # True
-print(a < b) # False
-print(a >= b) # True
-print(a <= b) # False
+print("a is equal to b:", a == b)
+print("a is not equal to b:", a != b)
+print("a is greater then b:", a > b)
+print("a is lesser then b:", a < b)
+print("a is greater or equal to b:", a >= b)
+print("a is lesser or equal to b:", a <= b)
 ```
 
 ## Logical Operators
@@ -202,13 +198,13 @@ In Python we have 3 logical operators. These are:
 `not` operator is used for inverting logic. If something is `True` it will invert it to `False`
 
 ```python interactive
-print((5 > 3) and (8 > 4)) # True
-print((6 > 7) and (8 > 4)) # False
+print(":first: and :second: conditions are True:", (5 > 3) and (8 > 4))
+print(":first: and :second: conditions are True:", (6 > 7) and (8 > 4))
 
-print((5 > 3) or (8 > 4)) # True
-print((6 < 7) or (8 > 4)) # True
+print(":first: or :second: condition is True:", (5 > 3) or (8 > 4))
+print(":first: or :second: condition is True:", (6 < 7) or (8 > 4))
 
-print(not True) # False
+print("not True: ", not True)
 ```
 
 ## Excercise

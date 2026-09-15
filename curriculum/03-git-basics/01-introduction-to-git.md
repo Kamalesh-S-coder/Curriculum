@@ -7,7 +7,6 @@ lesson: true
 isDraft: true
 ---
 # Introduction to Git
-## Introduction
 First let's make things clear, **Git** and **Github** are two completly separate systems. We usually use both together and in this lesson we will talk about what is **Git** and what is **Github**. I the next lesson we will connect those two together and in the last lesson of the chapter, we will learn the basics of using **Git**.
 
 ## What is Git?

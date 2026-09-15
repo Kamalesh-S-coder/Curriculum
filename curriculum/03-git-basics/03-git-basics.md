@@ -6,7 +6,6 @@ sidebar_position: 3
 lesson: true
 ---
 # Git Basics
-## Introduction {#introduction}
 Now that we have connected `git` with `github` we can learn some `git` basics.
 
 Git comes with a lot of commands, and is extremly powerful software. For now, we will focus on a few basic commands that you will use daily.
