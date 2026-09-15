@@ -31,7 +31,7 @@ print(f"Type of 'mylist' variable is: {type(mylist)}")
 print(f"Value of 'mylist' is: {mylist}")
 ```
 ### Pre-populated List
-```python interactive
+```python interactive 
 mylist = [1, 2, 3, 4]
 print(f"Type of 'mylist' variable is: {type(mylist)}")
 print(f"Value of 'mylist' is: {mylist}")
@@ -53,7 +53,7 @@ This function always returns **integer**.
 ## Manipulating Elements in List
 ### Accessing Elements
 To access the element withing a list we must use use its **index**. In Python we start counting from zero (0) so first element in the list is at index 0. Let's see this is example:
-```python interactive
+```python interactive debug
 mylist = [1, 2, 3]
 first_elem = mylist[0]
 last_elem = mylist[-1]
@@ -89,7 +89,6 @@ a = "banana"
 b = a[::-1]
 print(b)
 ```
-
 :::
 
 ### Adding Elements
@@ -97,7 +96,7 @@ There are multiple ways to insert elements to the list, depending on where you w
 
 #### Method: `.append`
 First example uses `.append()` method which takes a **single** argument and it is the recommended way of inserting elements. It adds them at the **last position**, expanding the list by one element, and does not need to recompute positiona of other elements, making it fast and reliable. Let's see an example:
-```python interactive
+```python interactive debug
 a = [] # Empty list
 print(f"List before appending: {a}")
 a.append(2)
@@ -108,7 +107,7 @@ print(f"List after another append: {a}")
 
 #### Method: `.insert`
 If you need to add elements at specific index, for that we use `.insert()` method which takes **two** arguments; *index* and *value*. This will insert *value* to supplied *index* shifting other elements to the right. Let's see this in the following example:
-```python interactive
+```python interactive debug
 a = [1, 2, 3, 4]
 print(f"List before insert: {a}")
 a.insert(2, 5) # Insert value 5 to index 2
@@ -119,7 +118,7 @@ print(f"List after insert: {a}")
 Removing of elements can also be done in a couple of ways.
 
 In the first example we will use `.pop()` method that takes **one optional** argument; *index*. This method removes **and** returnes the element from the list. By default, it *pops* the last element but can be set with optional argument.
-```python interactive
+```python interactive debug
 a = [1, 2, 3, 4]
 print(f"List before pop: {a}")
 b = a.pop()
@@ -131,7 +130,7 @@ print(f"List after another pop: {a}, {c=}")
 ```
 
 Another way to remove an element is to use `.remove()` method, but unlike `.pop()` it requires **one** argument; *element*. This method is useful when you want to remove the specific element but do not know its index position and you dont care about the element afterwards.
-```python interactive
+```python interactive debug
 a = [1, 2, 3, 4]
 print(f"List before remove: {a}")
 a.remove(3)
@@ -139,7 +138,7 @@ print(f"List after remove: {a}")
 ```
 ### Iterating With Lists
 Lists can be used with `for` loops to iterate on each element of the list, so you can proccess one at a time. Let's see how this works in the following example:
-```python interactive
+```python interactive debug
 a = [1, 2, 3, 4]
 
 for item in a:

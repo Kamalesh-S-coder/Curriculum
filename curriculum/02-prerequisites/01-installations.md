@@ -6,7 +6,6 @@ sidebar_position: 1
 lesson: true
 ---
 # Installations
-## Introduction
 First step to building any software is to have the right tools. For us developers, this means having to set up our **local development enviroment**.
 
 Many online courses (as well as ours) use in-browser code editors or *sandboxes* which provide some level of control for the given task but not much more. We will use these *sandboxes* throughout the course to demonstrate how code works. Projects on the other hand expect of you to use your own **local development enviroment** and will not provide code editor on the webpage itself.
@@ -42,11 +41,9 @@ A [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) (VM) is a sim
 This is very common way for you to experiment with diffrent operating systems, tools or anything else, because its separated from you **host machine** and cannot modify it.
 
 :::note[Virtual Machines consume resources]
-
 Your **host** operating system has to share resources with other **guest** machines running.
 
 If you own a system with low performances, this may be the wrong option. See **dual-booting** below.
-
 :::
 
 ### Dual-booting

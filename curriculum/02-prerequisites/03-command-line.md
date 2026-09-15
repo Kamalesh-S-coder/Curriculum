@@ -6,7 +6,6 @@ sidebar_position: 3
 lesson: true
 ---
 # Command Line
-## Introduction
 Have you ever heard of  **command line** (or **terminal**)? You have certainly seen one, probably in movies depicting hackers. Those black windows with loads of white or green text, hackers hacking into the bank, mainframe or whatever else producers can think of.
 
 That black screen with white or green text is **command line interface** (CLI). We won't be hacking anything today (or any day in this course) but you need to get familiar with basics of *command line* as its **essential** skill for a developer.
@@ -42,11 +41,9 @@ We have successfully created a new directory, but for now its empty. We can chec
 So lets go into our `test` directory. Typing `cd` (stands for *Change Directory*) followed by directory name takes us into our newly created directory. Let's try: type `cd test` and press <kbd>Enter</kbd>. Your **prompt** will change, indicating that we are no longer in previous directory but in a new one. Now let's create an empty text file (with the extension `.txt`) by typing `touch` followed by the name of the file we want to create. Let's try that now: type `touch myfile.txt` and press <kbd>Enter</kbd>. You will see no changes in your terminal other then the other **prompt** on a new line, waiting for the next command - this is completely normal. If you now run `ls` command again (remember, we are now inside the `test` directory so only `ls` is needed, no path specified after it) we will see the newly created file `myfile.txt`.
 
 :::info[Do not close terminal window]
-
 In the next step we will open VSCode from our terminal. Leave the terminal open and do not close terminal window as we will need it to continue practicing.
 
 If you do happen to close terminal windows, just open it back up and navigate to our `test` directory.
-
 :::
 
 Now let's try something fun. We will open this file we created, but in VSCode. No, not from our menu, from the terminal. While you are in `test` directory, type `code .` (don't forget the dot (`.`)) and see how VSCode opens directly in our `test` directory. We can also see and edit our `myfile.txt` file.
@@ -66,9 +63,7 @@ Two dots (`..`) represent **parent directory**. To move back from your `test` di
 Right now you should be in your `test` directory with a file inside named `myfile.txt` that has some content in it. If you are not, please open your terminal and navigate to `test` directory. To view the content of a file, you can use `cat` command which will dump everything that the file contains into your terminal.
 
 :::tip[Clear screen]
-
 If you have added too much content to our `myfile.txt` file, you may end up with a wall of text when running `cat` command. To clear your screen, you can use `clear` command, or use a keyboard shorcut <kbd>CTRL</kbd> + <kbd>L</kbd> (Mac: <kbd>CMD</kbd> + <kbd>L</kbd>).
-
 :::
 
 Lets see `cat` command in action. Type `cat myfile.txt` and press <kbd>Enter</kbd>. You should see content of your file right there in the terminal.
@@ -80,9 +75,7 @@ mv <old_filename> <new_filename>
 If we type `mv myfile.txt mytestfile.txt` we will essentually be renaming our file. Feel free to do so.
 
 :::danger
-
 If the new name already exists, `mv` will overwrite it without warning. To prevent this, use `mv -i` (interactive mode) to prompt you before overwriting.
-
 :::
 
 Now that we renamed (moved) file, we can also learn how to delete it. If you type `rm` (stands for *remove*) you can delete the files. **Be aware** there is no *Recyle Bin* when working in terminal. If you remove a file, its gone, so be **extremely careful** with this command. Let's type `rm mytestfile.txt` and press <kbd>Enter</kbd>. This command does not return any output, so we can use `ls` command to check if it has worked or not. If the file is gone, you can use `cd ..` to go back to parent directory.

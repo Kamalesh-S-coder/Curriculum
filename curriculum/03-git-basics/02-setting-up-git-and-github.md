@@ -6,7 +6,6 @@ sidebar_position: 2
 lesson: true
 ---
 # Setting up Git and Github
-## Introduction {#introduction}
 Learning `git` is very important as we mentioned before, and you will become very much familiar with it. Don't stress out about the current lesson too much, the goal is to set you up, as we will cover more `git` in feature lessons.
 
 ## Lesson Overview {#overview}

@@ -34,7 +34,7 @@ To create an empty set, we need to use `set()` function as using `{}` will creat
 
 ## Accessing Elements
 We cannot access elements of the set like we did with other data structures using index, but we can iterate over it with `for` loop or check if the item exists with `in` keyword :
-```python interactive
+```python interactive debug
 myset = {1, 2, 2, 2, 3, 3, 4, 5}
 
 for item in myset:
@@ -45,7 +45,7 @@ print(f"Is 3 in set?: {3 in myset}")
 
 ## Adding and Removing Elements
 We can use `.add()` method to add a single element to set or use `.update()` method to add multiple elements.
-```python interactive
+```python interactive debug
 a = {1, 2, 3}
 a.add(4)
 print(f"Set after add: {a}")
@@ -55,7 +55,7 @@ print(f"Set after update: {a}")
 ```
 
 Removing the elements can be done with `.remove()` method which raises `KeyError` if that element does not exist.
-```python interactive
+```python interactive debug
 a = {1, 2, 3}
 a.remove(2)
 print(f"Set after remove: {a}")
