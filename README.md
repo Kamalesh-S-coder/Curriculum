@@ -2,7 +2,6 @@
 
 The open-source, community-driven roadmap to Python mastery.
 
-
 The Python Ledger is a free, comprehensive curriculum designed to take students from their first "Hello World" to building professional-grade applications. 
 
 Inspired by the philosophy of *The Odin Project*, we believe the best way to learn is by doing, reading documentation, and contributing to the ecosystem.
@@ -33,3 +32,13 @@ Roadmap is subject to change. If you feel we should reorganize our structure, fe
 We are always looking for *"Ledger Keepers"*.
 
 Whether you are fixing a typo or designing a new project or lesson, your contributions are welcome. Please see [CONTRIBUTING.md](/CONTRIBUTING.md) for our style guide and workflow.
+
+### Our Contributors
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=ThePythonLedger/Curriculum"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
+
+## Special Thanks
+Thanks, @bterwijn, for making **Memory Graph**.
