@@ -39,7 +39,7 @@ for nmb in nmb_list:
 print(squared)
 ```
 And the result is correct, but in Python, we can do better. Let's convert our `for-loop` to **list comprehension**.
-```python interactive
+```python interactive debug
 nmb_list = [1, 2, 3, 4, 5, 6, 7, 8]
 squared = [nmb**2 for nmb in nmb_list]
 print(squared)
@@ -57,7 +57,7 @@ for nmb in nmb_list:
 print(squared_even)
 ```
 If we use **list comprehension** it would look like this:
-```python interactive
+```python interactive debug
 nmb_list = [1, 2, 3, 4, 5, 6, 7, 8]
 squared_even = [nmb ** 2 for nmb in nmb_list if nmb % 2 == 0]
 print(squared_even)
@@ -86,7 +86,7 @@ for name, price in prices_in_usd.items():
 print(prices_in_eur)
 ```
 To use **dict comprehension** we would rewrite the above code to:
-```python interactive
+```python interactive debug
 EUR_CONV_RATE = 0.92
 prices_in_usd = {'pen': 4, 'book': 15, 'keyboard': 60}
 
@@ -128,7 +128,7 @@ squared = {nmb ** 2 for nmb in nmb_list}
 print(squared)
 ```
 We can also use conditionals to get only specific values:
-```python interactive
+```python interactive debug
 nmb_list = [1, 2, 3, 4, 5, 6, 7, 8]
 squared_even = {nmb ** 2 for nmb in nmb_list if nmb % 2 == 0}
 print(squared_even)

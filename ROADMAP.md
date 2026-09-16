@@ -10,7 +10,7 @@ This may be subject to change.
 1. Introduction
     * [x] How course works?
     * [ ] Motivation and Mindset
-    * [ ] Asking for Help
+    * [ ] Asking for Help (WIP)
     * [x] Join the Community
     * [x] Computer Science basics, Programming and Python 
 2. Prerequisites 
@@ -28,11 +28,11 @@ This may be subject to change.
     * [x] User Input and Conditionals
     * [x] Loops
 5. Data Structures
-    * [x] Lists (WIP)
-    * [x] Tuples (WIP)
-    * [x] Sets (WIP)
-    * [x] Dictionaries (WIP)
-    * [x] Coprehensions (`list`, `dict` `set`) (WIP)
+    * [ ] Lists (WIP)
+    * [ ] Tuples (WIP)
+    * [ ] Sets (WIP)
+    * [ ] Dictionaries (WIP)
+    * [ ] Coprehensions (`list`, `dict` `set`) (WIP)
 6. Code Organization
     * [ ] Functions
     * [ ] Scope and Namespaces (LEGB rule)
