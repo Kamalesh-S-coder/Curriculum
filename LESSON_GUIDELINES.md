@@ -1,6 +1,7 @@
 # 📝 Lesson Structure
 Lessons should always follow the same structure. You can use [Lesson Template](/templates/lesson-template.md) to quickly scaffold skeleton of your lesson.
 
+## Required Sections
 1. **Front Matter** - we use front matter to organize our lessons. Some of the tags are required and some of them are optional.
     * `id`(**required**) - identifier for the lesson. Keep it short and with no spaces (use `-` for replacing space)
     * `title` (**required**) - human readable title to be shown at the top of the lesson
@@ -18,23 +19,64 @@ Lessons should always follow the same structure. You can use [Lesson Template](/
 9. **Assigment Section:** Assigment is also a required section, but unlike exercises, assigments follow a storyline from the start of the lessons - `simple-python-shop`. Students are encouraged to build and modify their existing project, following the lessons. **Do not provide interactive editor for this section.** Students complete this step on their own machines.
 10. **What's Next section:** A 1-2 sentence conceptual bridge to the next lesson.
 
-### Useful Features to Use
-In addition to [standard markdown](https://www.markdownguide.org/) and [Docusaurus markdown](https://docusaurus.io/docs/markdown-features) we have a few custom built components.
-* **Interactive python interpreter** - an interactive browser-based python interpreter (built with **Skulpt**) provides instant running of python code right there in the browser, reducing context switching and providing instant feedback on the code. This is intended for bringing code examples to life but should not be used for exercises or assigments which are to be done on local machine. All you need to do is to add `interactive` to your code blocks ans it takes care of the rest.
+## Custom Built Extensions
+In addition to [standard markdown](https://www.markdownguide.org/) and [Docusaurus markdown](https://docusaurus.io/docs/markdown-features) we have a few custom-built components.
+
+### Interactive Python Interpreter
+**Code Block Tag:** `interactive`
+
+Interactive browser-based python interpreter (powered by [Skulpt](https://skulpt.org/)) paired with [CodeMirror](https://codemirror.net/) provides interactive running python code right there in the browser, reducing context switching and providing instant feedback on the code. 
+
+This is intended for bringing code examples to life but should not be used for exercises or assignments which are **required** to be done on local machine. 
+
+All you need to do is to add `interactive` to your code blocks, and it takes care of the rest.
     ```
         ```python interactive
         print("Hello World!")
         ```
     ```
 
-* **Custom *Learn More* admonition** - in addition to Docusaurus provided admonitions, we have implemented a custom one for *Learn More* section. To create such admonition, use standard Docusaurus syntax with `explore` keyword.
+### Memory Graph Integration
+**Code Block Tag:** `debug`
+
+We have integrated [memory-graph.com](https://memory-graph.com/) into our platform to provide a seamless visualization of code blocks on the platform.
+
+To enable the button, use `debug` tag in code block:
+```python debug
+a = 3
+print(a)
+```
+
+You can also use it along `interactive` tag:
+```python interactive debug
+a = 3
+print(a)
+```
+
+### Custom *Learn More* admonition
+In addition to Docusaurus provided admonitions, we have implemented a custom one for *Learn More* section. To create such admonition, use standard Docusaurus syntax with `explore` keyword:
+```
+:::explore
+Content goes here
+:::
+```
+
+You can also provide a custom title of the block:
+```
+:::explore[Custom Title Here]
+Content goes here
+:::
+```
 
 ## ⚠️ No AI in lesson content
-We strongly belive that human written content has way more value and can teach a lot more then AI generated content can, so please do not use AI to write the content. If you do not have the time or knowlege, do not use AI as it will be rejected.
+We strongly believe that human written content has way more value and can teach a lot more than AI generated content can, so please do not use AI to write the content.
+
+If you do not have the time or knowledge, do not use AI as it will be rejected.
 
 ## ⚠️ Guidelines & What to Watch Out For
  * **❌ Don't list every method.** Do not give a table of every string or list method. Give them one example, then send them to the official docs to discover the rest.
  * **✅ Accurate Mental Models.** Avoid overly childish analogies, but also avoid assuming knowledge the student doesn't have yet. Don't reach for systems-level concepts like threads, processes, or execution contexts — a beginner has no scaffolding for these. Instead, build correct foundational models they *can* understand. Accuracy means not teaching things that will need to be "un-taught" later, not front-loading advanced vocabulary. Keep it simple, concise and provide links to external documentation and articles.
  * **❌ No Spoilers.** Do not provide answers to the Knowledge Checks in the lesson body.
  * **✅ Link Guidance.** When adding an assignment link, explicitly state *what* they should focus on (e.g., *"Focus deeply on sections 5.1 through 5.3"*).
- * **✅ Keep it Interactive.** Ensure all challenge blocks use the interactive flag for our Skulpt execution environment. Just add `interactive` to your code block and our engine takes care of the rest.
+ * **✅ Keep it Interactive.** Provide interactive flag for our Skulpt execution environment for any code demonstrating concept.
+ * **✅ Use Memory Graph** Use our `debug` flag to provide visualization of code block when you deem necessary

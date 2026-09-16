@@ -30,23 +30,21 @@ while condition:
 ```
 
 We can demonstrate this in the following example:
-```python interactive
+```python interactive debug
 a = 0
 while a < 5:
     print(f"a is: {a}")
-    a = a + 1 # Increase the variable a by 1
+    a = a + 1
 
 print("Loop has finished")
 ```
 
 :::tip[Always make sure your loop exits]
-
 While loops can be a bit tricky as we must keep track and update our condition every time the loop starts a new **iteration**. If we fail to update the condition our program will never finish its execution and it must be killed by force.
 
 This is a condition called **infinite loop** and it can be quite useful if controlled, but bad if left with no way to exit.
 
-If you ever do find yourself in an **infinite loop** with no way to exit, do not panic. Use keyboard shorcut <kbd>CTRL</kbd>+<kbd>C</kbd> to kill your program.
-
+If you ever do find yourself in an **infinite loop** with no way to exit, do not panic. Use keyboard shortcut <kbd>CTRL</kbd>+<kbd>C</kbd> to kill your program.
 :::
 
 ## For Loop
@@ -55,7 +53,7 @@ For loops are used when you know the number of times the code must loop. They ar
 for item in sequence:
 ```
 
-## `range()` Function
+### `range()` Function
 Python gives us `range()` function that returns a type of *sequence* called **generator**. We will learn about these at later lesson, for now, just know that we mostly use them in *for* loops to execute a loop specific number of times.
 
 You can pass diffrent arguments to the function to get diffrent behaviur. Function takes in 3 arguments, with the 1 being required.
@@ -69,7 +67,7 @@ range(start, stop, step)
 * **step**: which step to take for each count - default is 1
 
 Let's see a little example of using `for` loop and `range` function.
-```python interactive
+```python interactive debug
 for item in range(5):
     print(item)
 ```

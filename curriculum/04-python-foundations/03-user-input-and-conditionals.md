@@ -19,16 +19,14 @@ In this lesson you will learn:
 Our program would not be very useful if it cannot take data from the user. In Python we do this using `input()` function.  `input()` takes any string as a **user prompt** (what will be displayed to the user while waiting for input)
 
 ```python interactive
-name = input("What is your name?" )
-
+name = input("What is your name? ")
+print("Your name is:", name)
 ```
 
 :::info[`input()` always returns a string]
-
 `input()` function **always** returnes a *string*. This is something you need to watch for when you ask the user to enter some data. If you need numbers (integer or float) you will need to **type cast** it to some other type.
 
 If you cannot remember how to do this, check out previus [Core Datatypes - Type Casting](./01-output-variable-datatypes.md#type-casting) lesson.
-
 :::
 
 ## Conditionals - What Are They?
@@ -55,10 +53,8 @@ else:
 In this basic example, our program will execute its task depending on **conditions**. In the current example, we ask Python to compare value in variable `a` to **int** 5. If they are equal, program executes one branch and if its not, program executes another branch.
 
 :::info[Indentation as Code Section]
-
 Unlike other programming languages that use *curly braces* to mark blocks (sections) of code, in Python we use **indentation**.
 This is extremely important to learn as Python will raise **IndentationError** if you do it wrong.
-
 :::
 
 In Python, we also have `elif` keyword which means *else-if*. Its used to check more than one condition. Let's see an example:

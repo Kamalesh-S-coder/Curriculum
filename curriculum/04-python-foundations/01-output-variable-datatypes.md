@@ -47,18 +47,14 @@ Declaring variables has some rules:
 Styling guide **PEP8** suggests the use of `snake_case` for variable naming in python.
 
 :::tip
-
 See [PEP8 - Style Guide for Python Code](https://peps.python.org/pep-0008/) to learn more about style of writing python code.
-
 :::
 
 ## Python Core Data Types
 Python has 4 core data types with addition of `None` which is a special value representing **no value**.
 
-:::note
-
+:::info
 Python has a special `type()` function which returns what type some data is. We will use this to inspect the following data types.
-
 :::
 
 ### Integer
@@ -147,14 +143,12 @@ print("b=", b, "type=", type(b))
 print("c=", c, "type=", type(c))
 ```
 
-:::note
-
+:::info
 If Python cannot convert one type to another, it will raise **ValueError**. This usually happens when you try to convert some *text* into *number* or *float*.
 
 Error are very helpful as they tell us exactly **what** is the issue and **where** they happend. If the errors did not exists, your programs would just silently die, and you would have to randomly guess where the issue is.
 
 We will learn how to read and deal with errors in later lessons.
-
 :::
 
 ## Excercise

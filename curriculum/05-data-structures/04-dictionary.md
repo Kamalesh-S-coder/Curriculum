@@ -46,7 +46,7 @@ print(value2)
 
 ### Updating Elements
 Updating elements is as simple as assigment of a new value to existing key.
-```python interactive
+```python interactive debug
 mydict = {"key1": "value1", "key2":"value2"}
 print(f"Before: {mydict}")
 mydict["key1"] = "other value"
@@ -55,7 +55,7 @@ print(f"After: {mydict}")
 
 ### Adding Elements
 Adding new elements to dictionary is done just like *updating* but we use *key* that is **not** already in the dictionary.
-```python interactive
+```python interactive debug
 mydict = {"key1": "value1"}
 print(f"Before: {mydict}")
 mydict["key2"] = "other value"
@@ -64,7 +64,7 @@ print(f"After: {mydict}")
 
 ### Removing Elements
 To remove and return the value of the element from dictionary you can use `.pop()` method which takes in a single argument; **key**.
-```python interactive
+```python interactive debug
 mydict = {"key1": "value1", "key2":"value2"}
 print(f"Before: {mydict}")
 poped_value = mydict.pop("key1")
@@ -73,7 +73,7 @@ print(f"After: {mydict}")
 ```
 
 You can also use `del`keyword to remove a key-value pair from the dictionary.
-```python interactive
+```python interactive debug
 mydict = {"key1": "value1", "key2":"value2"}
 print(f"Before: {mydict}")
 del mydict["key1"]
@@ -81,7 +81,7 @@ print(f"After: {mydict}")
 ```
 
 For clearing the whole dictionary content you can use `.clear()` method.
-```python interactive
+```python interactive debug
 mydict = {"key1": "value1", "key2":"value2"}
 print(f"Before: {mydict}")
 mydict.clear()

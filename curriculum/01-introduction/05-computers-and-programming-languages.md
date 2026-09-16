@@ -23,6 +23,7 @@ Data is "stuff" that computer works with and is usually grouped in 3 mayor categ
  A program takes this **data** and does calculations on them, moves them around and displays the result back to user.
 
 *Almost all programmes do just this. Move and calculate data to achieve some result*
+
 # What Is an Actual Computer? {#what-is-computer}
 Computer is a machine consisting of many parts. We will focus on 3 main parts that play a vital role in executing our programmes.
 

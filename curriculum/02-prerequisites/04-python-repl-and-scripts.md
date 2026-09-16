@@ -7,7 +7,6 @@ lesson: true
 IsDraft: true
 ---
 # Python, REPL, and Script Files
-## Introduction
 As we mentioned in the previus lesson, Python is a command (a program) that you run by typing `python` (or `python3` depending on your operating system). For this to work, Python must be installed and in your `PATH`. If you have been following along with our course, Python should be preinstalled on your system, which you can verify by running `python --version` command. This will output your currently installed Python version or produce an error if there is no system-wide Python installed.
 
 ## Python has Two Operating Modes
