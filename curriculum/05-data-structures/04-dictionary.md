@@ -7,7 +7,6 @@ lesson: true
 isDraft: true
 ---
 # Dictionary
-## Introduction {#introduction}
 Dictionaries in Python are mutable and unordered collection data structure. **Mutable** meaning it can be modified after creating and **unordered** meaning it does not keep track of it's elements.
 
 Dictionaries are something special, usually called **key-value** data structure because of the way you store data inside them. You will certanly do a lot of work involving dictionaries in your python applications and its a very powerful concept, so let's get started.
@@ -124,6 +123,12 @@ for key, value in mydict.items():
     print(key, value)
 ```
 
+:::explore[Learn more about Python dicts]
+Read this [built-in: dict](https://realpython.com/ref/builtin-types/dict/) article from **Real Python** and pay special attention to sections **dict Operators** and **dict Methods**.
+
+Remember, just read through, you do not have to know it all.
+:::
+
 ## Exercise
 Complete [[TODO] Exercise 08 — WorkingTitle](#) to practice dictionaries.
 
@@ -139,8 +144,6 @@ In this assignment, we will completely eliminate list index tracking by refactor
 4. In customer order, look up if item is in the inventory directly with `if item_name in inventory`, verify stock availability with `inventory[item_name]["stock"]` and update stock count in place with `inventory[item_name]["stock"] -= 1` and if stock reaches `0` then delete the item from the inventory using `del inventory[item_name]`.
 5. Keep `order` as a list of tuples, and update the `unsold_items` variable to check between keys of the dictionary and tuple elements - use `inventory.keys()` to get a *tuple-like* object of dictionary keys that you can use in this case to substract `order` elements from keys of dictionary.
 6. Test your application, make sure it works, commit and push to Github.
-
-## Deepen Your Knowlege {#learn-more}
 
 ## What's Next {#next-lesson}
 We are now done with basic data structures in Python, next we move on to something even more fun and useful, kind of a super power in Python: **coprehensions**

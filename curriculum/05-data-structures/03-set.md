@@ -7,7 +7,6 @@ lesson: true
 isDraft: true
 ---
 # Set
-## Introduction {#introduction}
 A **set** in Python is unordered collection of unique elements. **Unordered** means it does not keep the order of the elements and **unique** means it does not allow duplicates.
 
 Its mostly used when removing duplicates from list or performing quick membership tests (checking to see if some element belongs to both sets).
@@ -73,9 +72,9 @@ print("Difference:", set1 - set2)
 ```
 
 :::explore[Learn more about Python Sets]
-Learn more about sets in these materials:
-* [Python built-in data types from RealPython](https://realpython.com/ref/builtin-types/set/)
-* [Python data structures: set from official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#sets)
+Explore Python sets deeper by visiting this [built-in: set] article from **Real Python** (especially the part about additional methods which come in handy when working with sets).
+
+Remember you do not need to remember all the methods there are. Just read through them, to know they exist.
 :::
 
 ## Exercise

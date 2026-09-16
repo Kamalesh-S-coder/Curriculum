@@ -64,6 +64,31 @@ print(squared_even)
 ```
 The result is again, completely the same, but the syntax is shorter and more concise.
 
+Let's look at the final type of list comprehension, which will produce one value if the condition is `True` or something else if the condition is `False`. For example, let's say we need to produce a list, containing `True` if the number is even or `False` if its odd.
+
+In classic python **for-loop** style, we would do something like this:
+```python interactive
+nmb_list = [1, 2, 3, 4, 5, 6, 7, 8]
+even_mask = []
+for nmb in nmb_list:
+    if nmb % 2 == 0:
+        even_mask.append(True)
+    else:
+        even_mask.append(False)
+print(even_mask)
+```
+
+But Python let's us use its super power here also:
+```python interactive debug
+nmb_list = [1, 2, 3, 4, 5, 6, 7, 8]
+even_mask = [True for nmb in nmb_list if nmb % 2 == 0 else False]
+print(even_mask)
+```
+
+:::tip[Superpowers work with any comprehension]
+`if condition` and `if condition else` works will all comprehensions and not just with lists, and they work in the same manner.
+:::
+
 You do not need to worry about understanding **comprehensions** right away, but they become extremely useful the more you write your code.
 
 Now that we learned what are list comprehensions, let's look at **dictionary comprehensions** which are very similar in syntax but allows us to create dictionaries similarly.
@@ -134,19 +159,13 @@ squared_even = {nmb ** 2 for nmb in nmb_list if nmb % 2 == 0}
 print(squared_even)
 ```
 
-:::explore
-Documentation Hunting
-:::
-
-:::tip
+:::warning
 Comprehensions are very useful and can make your code smaller and easier to understand and reason about. But it also can make your code very difficult to read and understand.
 
 Use them with caution and remember:
 * USE comprehensions while the code is readable
 * DO NOT use comprehensions when the code starts to become unreadable and go back to **for-loop** for clarity.
 :::
-
-## Answer These Questions
 
 ## Exercise
 

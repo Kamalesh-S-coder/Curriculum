@@ -51,9 +51,7 @@ Unlike lists, as we cannot modify tuples, we don't have a lot of methods availab
     ```
 
 :::explore[Learn more about Python Tuples]
-Read these resources to learn more about tuples in Python:
-* [Python built-in types: tuples from RealPython](https://realpython.com/ref/builtin-types/tuple/)
-* [Tuples and Sequences from official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
+Deep dive into Python tuples in this [Deep Dive: tuples](https://realpython.com/python-tuple/) article by **Real Python** which takes you deep in topic of tuples and their usecases.
 :::
 
 ## Exercise

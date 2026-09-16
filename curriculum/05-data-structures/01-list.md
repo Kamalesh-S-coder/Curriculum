@@ -7,7 +7,6 @@ lesson: true
 isDraft: true
 ---
 # List
-## Introduction {#introduction}
 Up until now we have stored a single value in a variable, but what if we need to hold multiple values in some variable? Do we create multiple variables? Of course not, Python has a *built-in* mechanisms for dealing with collections of data which we call **data structures**. In this lesson we first take a look at **list**.
 
 Lists in Python are *built-in* data structure for storing ordered collections of items. They are **ordered** meaning they keep the order in which data came in. They are also **mutable** which means we can change them in place without creating a new copy. They can hold any other type of data including other lists or other data structures. Lists are probably the most used data structure in Python.
